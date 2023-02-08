@@ -1,15 +1,65 @@
 #tit {
+    
     font-family: 'Poppins', sans-serif;
     background-color: aqua;
+    font-size: medium;
+    width: fit-content;
+      }
+#divtit {
+    display: flex;
+    justify-content: left;
 }
 #tit {
+    
     text-decoration: none;
     background-image: linear-gradient(currentColor, currentColor);
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
     transition: background-size .3s;
+    
 }
 #tit:hover, #tit:focus {
+    
     background-size: 100% 2px;
 }
+
+
+
+
+/*Zoom In*/
+.zoomIn img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.zoomIn:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+
+/*Zoom Out*/
+.zoomOut img {
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.zoomOut:hover img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+
+.btn{
+    cursor:pointer;
+        position:relative;
+        padding:10px 20px;
+        background:white;
+        font-size:28px;
+        border-top-right-radius:10px;
+        border-bottom-left-radius:10px;
+        transition:all 1s;}
+
