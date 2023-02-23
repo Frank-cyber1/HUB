@@ -1,0 +1,26 @@
+#tit {
+    
+    font-family: 'Poppins', sans-serif;
+    background-color: aqua;
+    font-size: medium;
+    width: fit-content;
+      }
+#divtit {
+    display: flex;
+    justify-content: left;
+}
+#tit {
+    
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    
+}
+#tit:hover, #tit:focus {
+    
+    background-size: 100% 2px;
+}
+

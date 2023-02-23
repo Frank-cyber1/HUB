@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Rubik:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik";
+}
+
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(8, 8, 109) 12%, rgb(9, 9, 118) 15%, rgb(9, 9, 121) 21%, rgb(8, 8, 111) 22%, rgb(167, 6, 104) 46%, rgb(2, 168, 227) 72%, rgb(1, 190, 241) 93%, rgb(0, 212, 255) 100%);
+}
+
+.carrusel {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 92vh;
+}
+.carrusel__envoltorio {
+  width: 450px;
+  height: 500px;
+  background: transparent;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transform: scale(0.93);
+  transition: 0.5s;
+  z-index: 1000;
+}
+.carrusel__envoltorio:hover {
+  transform: scale(1);
+  box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
+}
+.carrusel__envoltorio__container {
+  width: 100%;
+  height: 100%;
+}
+.carrusel__envoltorio__container__img {
+  height: 80%;
+  width: 100%;
+  background-size: cover;
+}
+.carrusel__envoltorio__container__bottom {
+  width: 100%;
+  height: 20%;
+  transition: 0, 5s;
+}
+.carrusel__envoltorio__container__bottom__left {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  float: left;
+}
+.carrusel__envoltorio__container__bottom__left__details {
+  padding: 10px 10px 5px 20px;
+  float: left;
+  width: calc(70% - 40px);
+}
+.carrusel__envoltorio__container__bottom__left__details__tex-products {
+  font-size: 25px;
+}
+.carrusel__envoltorio__container__bottom__left__Leer-mas {
+  float: right;
+  height: 100%;
+  background: #64ffda;
+  transition: background 0.5s;
+  border-left: 1px solid rgba(0, 0, 0, 0.1843137255);
+}
+.carrusel__envoltorio__container__bottom__left__Leer-mas i {
+  font-size: 30px;
+  padding: 30px;
+  color: rgb(0, 0, 0);
+  transition: 0.5s;
+}
+.carrusel__envoltorio__container__bottom__left__Leer-mas i:hover {
+  transform: rotate(360deg);
+}
+.carrusel__envoltorio__inside {
+  z-index: 9;
+  background: #64ffda;
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: -70px;
+  right: -70px;
+  border-radius: 0 0 200px 200px;
+  transition: all 0.5s, border-radius 2s, top 1s;
+  overflow: hidden;
+}
+.carrusel__envoltorio__inside__icon {
+  position: absolute;
+  right: 85px;
+  top: 85px;
+  color: #fff;
+  opacity: 1;
+}
+.carrusel__envoltorio__inside:hover {
+  width: 100%;
+  right: 0;
+  top: 0;
+  border-radius: 0;
+  height: 80%;
+}
+.carrusel__envoltorio__inside:hover .carrusel__envoltorio__inside__icon {
+  right: 15px;
+  top: 15px;
+  transition-property: color;
+  transition-duration: 0.5s;
+  color: #000000;
+  opacity: 1;
+}
+.carrusel__envoltorio__inside:hover .carrusel__envoltorio__inside__contents {
+  opacity: 1;
+  transform: scale(1);
+  transform: translate(0);
+}
+.carrusel__envoltorio__inside__contents {
+  padding: 5%;
+  opacity: 0;
+  transform: scale(0.5);
+  transform: translateY(-200%);
+  transition: opacity 0.2s, transform 0.8s;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
